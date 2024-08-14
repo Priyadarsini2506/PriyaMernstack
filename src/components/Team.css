@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  margin: 0;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-left: 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff6347;
+}
+
+.team {
+  padding: 100px 20px 20px;
+  text-align: center;
+}
+
+.team-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.team p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.team-member h3 {
+  font-size: 24px;
+  color: #333;
+  margin: 15px 0 5px;
+}
+
+.team-member .location {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.team-member .description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.team-member button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0f1114;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.team-member button:hover {
+  background-color: #0d0f11;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.add-review-button {
+  padding: 12px 24px;
+  background-color: #0f1114;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px; 
+  outline: none;
+}
+
+.add-review-button:hover {
+  background-color: #0d0f11;
+  transform: translateY(-3px);
+}
+
+.add-review-button:active {
+  background-color: #0d0f11;
+  transform: translateY(-1px);
+}
+
+.add-review-button:focus {
+  outline: 2px solid #16040144; 
+}
+
+.add-member-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.add-member-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+  margin-top: 20px; 
+}
+
+.add-member-form input {
+  width: 100%;
+  max-width: 400px; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; 
+}
+
+.add-member-form button {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: none;
+  background-color: #0f1114;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 16px;
+}
+
+.add-member-form button:hover {
+  background-color: #0d0f11;
+  transform: translateY(-3px);
+}
+

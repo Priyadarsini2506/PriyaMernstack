@@ -1,0 +1,138 @@
+/* General styles for the login section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://tse1.mm.bing.net/th?id=OIP.F1Dlj91FsdZXKCa5U8B5XgHaEK&pid=Api&P=0&h=180') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+    position: relative; /* To ensure the overlay is positioned correctly */
+}
+
+/* Optional: A semi-transparent dark overlay for better text readability */
+.login-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the darkness by changing the alpha value */
+    z-index: -1; /* Ensures the overlay is behind the form container */
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    z-index: 1; /* Ensures the form is above the overlay */
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.inputbox {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.inputbox input:focus {
+    border-color: #70757b;
+    outline: none;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s;
+    color: #aaa;
+}
+
+.inputbox input:focus + label,
+.inputbox input:not(:placeholder-shown) + label {
+    top: -0.75rem;
+    left: 1rem;
+    font-size: 0.75rem;
+    color: #007bff;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.remember-me input {
+    margin-right: 0.5rem;
+}
+
+#form-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form-button:hover {
+    background-color: #0056b3;
+}
+
+.register {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.register a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register a:hover {
+    color: #0056b3;
+}

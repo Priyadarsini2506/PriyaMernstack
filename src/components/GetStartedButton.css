@@ -1,0 +1,50 @@
+/* Base button styles */
+.get-started-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #130503; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #0d0d0d; 
+  transform: scale(1.05);
+}
+
+.get-started-button:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .get-started-button {
+      padding: 12px 25px;
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .get-started-button {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .get-started-button {
+      padding: 8px 15px;
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .get-started-button {
+      padding: 6px 10px;
+      font-size: 10px;
+  }
+}
